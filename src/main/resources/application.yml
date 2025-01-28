@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: spring-cassandra-service
+
+  cassandra:
+    username: cassandra
+    password: cassandra
+    contact-points: 127.0.0.1
+    port: 9042
+    local-datacenter: datacenter1
+    use-dc-aware: true
+    #keyspace-name: ${ASTRA_DB_KEYSPACE}
+    schema-action: NONE #CREATE_IF_NOT_EXISTS
+    request:
+      timeout: 10s
+    connection:
+      connect-timeout: 10s
+      init-query-timeout: 10s
+
+

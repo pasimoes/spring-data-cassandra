@@ -1,0 +1,6 @@
+account_id,customer_id,account_balance,account_name,account_type,created_datetime,last_updated
+1e75a5b1-ec5a-4c32-a1b2-b6a67940f5a4,2o94l6l2-on6j-4n41-k2m3-mhkhhh50q6l5,1001,"acc_001","Checking",2024-08-27 14:35:20,2024-08-27 14:35:20
+2d85b6b2-ec6a-4d42-a2c3-c7b78950g6b5,3p05m7m3-po7k-5o52-l3n4-niilli61r7m6,1002,"acc_002","Checking",2024-08-27 14:35:20,2024-08-27 14:35:20
+3f95c7c3-fd7a-5e52-b3d4-d8c79961h7c6,w72t4t0-wv4r-2v29-s0u1-upptts38y4t3,1003,"acc_003","Savings",2024-08-27 14:35:20,2024-08-27 14:35:20
+4g16d8d4-ge8b-6f63-c4e5-e9d8aa72i8d7,0m72j4j0-ml4h-2l29-i0k1-kfifff38o4j3,1004,"acc_004","Checking",2024-08-27 14:35:20,2024-08-27 14:35:20
+5h27e9e5-hf9c-7g74-d5f6-faebbb83j9e8,y94v6v2-xy6t-4x41-u2w3-wrruuu50a6v5,1005,"acc_005","Savings",2024-08-27 14:35:20,2024-08-27 14:35:20
