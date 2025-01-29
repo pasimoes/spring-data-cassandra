@@ -34,33 +34,21 @@
 		<cassandra-driver.version>4.17.0</cassandra-driver.version>
 	</properties>
 	<dependencies>
-<!--		<dependency>-->
-<!--			<groupId>org.springframework.boot</groupId>-->
-<!--			<artifactId>spring-boot-starter-data-jpa</artifactId>-->
-<!--		</dependency>-->
-<!--		<dependency>-->
-<!--			<groupId>org.springframework.boot</groupId>-->
-<!--			<artifactId>spring-boot-starter-data-cassandra</artifactId>-->
-<!--			<exclusions>-->
-<!--				<exclusion>-->
-<!--					<groupId>org.apache.cassandra</groupId>-->
-<!--					<artifactId>java-driver-bom</artifactId>-->
-<!--				</exclusion>-->
-<!--			</exclusions>-->
-<!--		</dependency>-->
 		<dependency>
 			<groupId>org.springframework.data</groupId>
 			<artifactId>spring-data-cassandra</artifactId>
 		</dependency>
 
-		<!-- Cassandra Driver -->
-		<!-- https://mvnrepository.com/artifact/com.datastax.oss/java-driver-bom -->
 		<dependency>
 			<groupId>com.datastax.oss</groupId>
-			<artifactId>java-driver-bom</artifactId>
+			<artifactId>java-driver-core</artifactId>
 			<version>${cassandra-driver.version}</version>
-			<scope>import</scope>
-			<type>pom</type>
+		</dependency>
+
+		<dependency>
+			<groupId>com.datastax.oss</groupId>
+			<artifactId>java-driver-query-builder</artifactId>
+			<version>${cassandra-driver.version}</version>
 		</dependency>
 
 		<dependency>

@@ -32,7 +32,7 @@ public class AccountController {
      */
     @GetMapping("/accounts")
     public List<Account> getAllAccounts() {
-        return accountRepository.findAll();
+        return (List<Account>) accountRepository.findAll();
     }
 
     /**
@@ -47,7 +47,7 @@ public class AccountController {
 
         if (!exists) {
             try {
-                Account newAccount = accountRepository.insert(account);
+                Account newAccount = accountRepository.save(account);//accountRepository.insert(account);
 
                 URI location = ServletUriComponentsBuilder
                         .fromCurrentRequest()
@@ -147,7 +147,7 @@ public class AccountController {
         boolean exists = journalRepository.existsById(journalEntry.getJournalId());
         if (!exists) {
             try {
-                Journal newJournalEntry = journalRepository.insert(journalEntry);
+                Journal newJournalEntry = journalRepository.save(journalEntry);
                 return new ResponseEntity<>(newJournalEntry, HttpStatus.CREATED);
             } catch (Exception e) {
                 return new ResponseEntity<>(null, HttpStatus.INTERNAL_SERVER_ERROR);
@@ -182,7 +182,7 @@ public class AccountController {
             if (data.isPresent()) {
                 Journal newJournalEntry = data.get();
                 newJournalEntry.setJournalType("DEPOSIT");
-                journalRepository.insert(newJournalEntry);
+                journalRepository.save(newJournalEntry);
                 return new ResponseEntity<Journal>(newJournalEntry, HttpStatus.OK);
             } else {
                 return new ResponseEntity<Journal>(new Journal(), HttpStatus.ACCEPTED);
