@@ -11,7 +11,7 @@ import java.util.Date;
 import java.util.UUID;
 
 @NoArgsConstructor
-@Table(keyspace = "bank", value = "journal")
+@Table(value = "journal")
 public class Journal {
 
     @PrimaryKeyColumn(name = "journal_id", type = PrimaryKeyType.PARTITIONED, ordinal = 1)

@@ -12,7 +12,7 @@ import java.util.Date;
 import java.util.UUID;
 
 @NoArgsConstructor
-@Table(keyspace = "bank", value = "account")
+@Table("account")
 public class Account {
 
     @PrimaryKeyColumn(name = "account_id", type = PrimaryKeyType.PARTITIONED, ordinal = 1)

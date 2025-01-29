@@ -9,7 +9,7 @@ spring:
     port: 9042
     local-datacenter: datacenter1
     use-dc-aware: true
-    #keyspace-name: ${ASTRA_DB_KEYSPACE}
+    keyspace-name: bank
     schema-action: NONE #CREATE_IF_NOT_EXISTS
     request:
       timeout: 10s
