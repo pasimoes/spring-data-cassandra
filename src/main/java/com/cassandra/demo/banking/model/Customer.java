@@ -19,9 +19,11 @@ public class Customer {
     @CassandraType(type = CassandraType.Name.UUID)
     private UUID customerId;
 
+    @Column
     @CassandraType(type = CassandraType.Name.TEXT)
     private String name;
 
+    @Column
     @CassandraType(type = CassandraType.Name.TEXT)
     private String address;
 
@@ -29,6 +31,7 @@ public class Customer {
     @CassandraType(type = CassandraType.Name.TEXT)
     private String phoneNumber;
 
+    @Column
     @CassandraType(type = CassandraType.Name.TEXT)
     private String email;
 

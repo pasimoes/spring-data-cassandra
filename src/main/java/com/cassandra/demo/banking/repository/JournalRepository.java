@@ -11,7 +11,7 @@ import java.util.UUID;
 @Repository
 @RestResource(exported = false)
 public interface JournalRepository extends CassandraRepository<Journal, UUID> {
-    Journal findJournalByJournalId(UUID journalId);
+    Journal findByJournalId(UUID journalId);
 
     List<Journal> findByAccountId(UUID accountId);
 }
